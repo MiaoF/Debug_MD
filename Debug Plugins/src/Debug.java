@@ -10,9 +10,6 @@ public class Debug {
 			MyPlugin plugin = new MyPlugin();
 			WMF_MD_TopologyPlugin topoPlugin = new WMF_MD_TopologyPlugin();
 			Application app = Application.getInstance();
-			// Start the application (visible, not silent,
-			// don't try to load a project, the given args,
-			// the StartUp participant)
 			app.start(true, false, false, args, null);
 			plugin.init();
 			topoPlugin.init();
